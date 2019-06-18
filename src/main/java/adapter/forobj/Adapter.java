@@ -1,13 +1,6 @@
 package adapter.forobj;
 
-/**
- * @Title: Adapter
- * @Description:
- * @Author: xMustang
- * @Version: 1.0
- * @create: 2019/6/18 15:33
- */
-public class Adapter implements Target {
+public class Adapter implements ITarget {
     private Adaptee adaptee = new Adaptee();
 
     @Override

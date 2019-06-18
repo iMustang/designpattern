@@ -1,5 +1,5 @@
 package simplefactroy;
 
-public interface Cake {
+public interface ICake {
     void taste();
 }

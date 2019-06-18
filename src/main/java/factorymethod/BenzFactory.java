@@ -1,7 +1,7 @@
 package factorymethod;
 
-public class BenzFactory implements CarFactory {
-    public Car produceCar() {
+public class BenzFactory implements ICarFactory {
+    public ICar produceCar() {
         return new Benz();
     }
 }

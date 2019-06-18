@@ -1,5 +1,5 @@
 package factorymethod;
 
-public interface Car {
+public interface ICar {
     void run();
 }

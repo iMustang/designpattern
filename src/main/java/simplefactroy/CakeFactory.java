@@ -1,7 +1,7 @@
 package simplefactroy;
 
 public class CakeFactory {
-    public static Cake produceCake(String cakeType) {
+    public static ICake produceCake(String cakeType) {
         switch (cakeType) {
             case "durianCake":
                 return new DurianCake();
@@ -17,7 +17,7 @@ public class CakeFactory {
     /**
      * 通过反射方式创建对象
      */
-    public static Cake produceCake(Class obj) throws ClassNotFoundException, IllegalAccessException, InstantiationException {
-        return (Cake) Class.forName(obj.getName()).newInstance();
+    public static ICake produceCake(Class obj) throws ClassNotFoundException, IllegalAccessException, InstantiationException {
+        return (ICake) Class.forName(obj.getName()).newInstance();
     }
 }

@@ -1,5 +1,5 @@
 package bridge;
 
-public interface HomeAppliance {
+public interface IHomeAppliance {
     String description();
 }

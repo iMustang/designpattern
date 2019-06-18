@@ -1,13 +1,13 @@
 package abstractfactory;
 
-public class HaierHomeApplianceFactory implements HomeApplianceFactory {
+public class HaierHomeApplianceFactory implements IHomeApplianceFactory {
     @Override
-    public Airconditioner produceAirconditioner() {
+    public IAirconditioner produceAirconditioner() {
         return new HaierAirconditioner();
     }
 
     @Override
-    public Refrigerator produceRefrigerator() {
+    public IRefrigerator produceRefrigerator() {
         return new HaierRefrigerator();
     }
 }

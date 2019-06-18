@@ -8,9 +8,9 @@ package bridge;
  * @create: 2019/6/18 15:46
  */
 public abstract class BrandBridge {
-    protected HomeAppliance homeAppliance;
+    protected IHomeAppliance homeAppliance;
 
-    public BrandBridge(HomeAppliance homeAppliance) {
+    public BrandBridge(IHomeAppliance homeAppliance) {
         this.homeAppliance = homeAppliance;
     }
 

@@ -3,7 +3,7 @@ package bridge;
 public class Haier extends BrandBridge {
     private final String name = "海尔";
 
-    public Haier(HomeAppliance homeAppliance) {
+    public Haier(IHomeAppliance homeAppliance) {
         super(homeAppliance);
     }
 

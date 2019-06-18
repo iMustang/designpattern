@@ -1,6 +1,6 @@
 package builder;
 
-public class ConcreteComputerBuilder implements ComputerBuilder {
+public class ConcreteComputerBuilder implements IComputerBuilder {
     private Computer computer = new Computer();
 
     @Override

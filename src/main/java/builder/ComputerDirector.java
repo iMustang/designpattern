@@ -1,7 +1,7 @@
 package builder;
 
 public class ComputerDirector {
-    private ComputerBuilder computerBuilder = new ConcreteComputerBuilder();
+    private IComputerBuilder computerBuilder = new ConcreteComputerBuilder();
 
     public Computer build(String cpu, String memory) {
         computerBuilder.buildCpu(cpu);

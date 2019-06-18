@@ -10,7 +10,7 @@ package bridge;
 public class Gree extends BrandBridge {
     private final String name = "格力";
 
-    public Gree(HomeAppliance homeAppliance) {
+    public Gree(IHomeAppliance homeAppliance) {
         super(homeAppliance);
     }
 

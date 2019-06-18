@@ -7,7 +7,7 @@ package bridge;
  * @Version: 1.0
  * @create: 2019/6/18 15:44
  */
-public class Aircondition implements HomeAppliance {
+public class Aircondition implements IHomeAppliance {
     private final String name = "空调";
 
     @Override

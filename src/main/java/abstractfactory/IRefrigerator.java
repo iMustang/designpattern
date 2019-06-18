@@ -1,5 +1,5 @@
 package abstractfactory;
 
-public interface Refrigerator {
+public interface IRefrigerator {
     void run();
 }

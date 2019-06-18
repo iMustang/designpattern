@@ -1,13 +1,13 @@
 package abstractfactory;
 
-public class MediaHomeApplianceFactory implements HomeApplianceFactory{
+public class MediaHomeApplianceFactory implements IHomeApplianceFactory {
     @Override
-    public Airconditioner produceAirconditioner() {
+    public IAirconditioner produceAirconditioner() {
         return new MediaAirconditioner();
     }
 
     @Override
-    public Refrigerator produceRefrigerator() {
+    public IRefrigerator produceRefrigerator() {
         return new MediaRefrigerator();
     }
 }

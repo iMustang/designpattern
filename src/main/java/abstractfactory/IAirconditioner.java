@@ -1,5 +1,5 @@
 package abstractfactory;
 
-public interface Airconditioner {
+public interface IAirconditioner {
     void run();
 }

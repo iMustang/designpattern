@@ -1,8 +1,8 @@
-package adapter;
+package adapter.forobj;
 
 /**
  * 目标接口，业务期待的接口
  */
-public interface Target {
+public interface ITarget {
     void targetMethod();
 }
