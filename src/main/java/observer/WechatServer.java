@@ -3,13 +3,6 @@ package observer;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @Title: WechatServer
- * @Description:
- * @Author: xMustang
- * @Version: 1.0
- * @create: 2019/6/19 17:22
- */
 public class WechatServer implements IObseverable {
     private List<IObserver> list = new ArrayList<>();
     private String msg;
