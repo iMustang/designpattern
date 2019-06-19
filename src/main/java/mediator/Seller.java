@@ -19,6 +19,6 @@ public class Seller implements IUser {
 
     @Override
     public void processMsg(String receiveMsg) {
-        System.out.println(new SimpleDateFormat("mm:SS").format(new Date()) + " " + receiveMsg);
+        System.out.println(new SimpleDateFormat("mm:ss").format(new Date()) + " " + receiveMsg);
     }
 }
