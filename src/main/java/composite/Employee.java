@@ -5,10 +5,6 @@ import java.util.List;
 
 /**
  * @Title: Employee
- * @Description:
- * @Author: xMustang
- * @Version: 1.0
- * @create: 2019/6/18 16:19
  */
 public class Employee {
     private String name;
