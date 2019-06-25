@@ -7,11 +7,11 @@ public class StaticInnerClassSingleton {
     private StaticInnerClassSingleton() {
     }
 
-    private static class InnerClass {
-        private static final StaticInnerClassSingleton instance = new StaticInnerClassSingleton();
+    private static class LazyHolder {
+        private static final StaticInnerClassSingleton INSTANCE = new StaticInnerClassSingleton();
     }
 
     public static StaticInnerClassSingleton getInstance() {
-        return InnerClass.instance;
+        return LazyHolder.INSTANCE;
     }
 }
