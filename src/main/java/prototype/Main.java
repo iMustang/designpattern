@@ -8,9 +8,14 @@ public class Main {
         student.setName("xMustang");
         System.out.println(student);
 
-        Student cloneStu = (Student) student.clone();
-        System.out.println(cloneStu);
-        cloneStu.setName("horse");
-        System.out.println(cloneStu);
+        Student cloneStudent = (Student) student.clone();
+
+        // 发现浅拷贝中引用对象不拷贝
+        System.out.println(cloneStudent);
+
+        System.out.println(student == cloneStudent);
+
+        cloneStudent.setName("Horse");
+        System.out.println(cloneStudent);
     }
 }
