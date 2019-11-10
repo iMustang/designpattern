@@ -10,7 +10,7 @@ public class Main {
 
         Student cloneStu = (Student) student.clone();
         System.out.println(cloneStu);
-        cloneStu.setName("horse");
+        cloneStu.setName("Horse");
         System.out.println(cloneStu);
     }
 }

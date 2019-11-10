@@ -20,6 +20,7 @@ class RealizeType implements Cloneable {
 
     @Override
     public Object clone() throws CloneNotSupportedException {
+        System.out.println("RealizeType实例复制成功");
         return super.clone();
     }
 }
