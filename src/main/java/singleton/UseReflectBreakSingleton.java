@@ -4,7 +4,6 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
 /**
- * @Title: UseReflectBreakSingleton
  * 使用反射打破单例模式
  */
 public class UseReflectBreakSingleton {
