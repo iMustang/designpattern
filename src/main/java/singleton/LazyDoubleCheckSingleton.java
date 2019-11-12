@@ -36,7 +36,7 @@ public class LazyDoubleCheckSingleton {
 
     public static LazyDoubleCheckSingleton getInstance() {
         if (instance == null) { // 刚开始，线程A、B都判断为空，假设线程A先进入临界区
-            synchronized (LazyDoubleCheckSingleton.class) {
+            synchronized (LazyDoubleCheckSingleton.class) {// synchronized会使得变量更新后，同步主内存
                 // 线程A创建完对象，instance不为空了。
                 // 进行第二次判空是为了，线程B之前在外层if判断为true也会进入临界区，此时instance已经由线程A构建，不再为空，instance是静态变量，线程B再访问一次，判断不为空，不再构建instance
                 if (instance == null) {
