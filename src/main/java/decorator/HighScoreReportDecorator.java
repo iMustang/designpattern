@@ -1,6 +1,6 @@
 package decorator;
 
-public class HighScoreReportDecorator extends ReportDecorator {
+public class HighScoreReportDecorator extends AbstractReportDecorator {
     public HighScoreReportDecorator(ISchoolReport sr) {
         super(sr);
     }

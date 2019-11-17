@@ -1,9 +1,9 @@
 package decorator;
 
-public abstract class ReportDecorator implements ISchoolReport {
+public abstract class AbstractReportDecorator implements ISchoolReport {
     private ISchoolReport sr;
 
-    public ReportDecorator(ISchoolReport sr) {
+    public AbstractReportDecorator(ISchoolReport sr) {
         this.sr = sr;
     }
 

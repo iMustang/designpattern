@@ -1,6 +1,6 @@
 package decorator;
 
-public class SortReportDecorator extends ReportDecorator {
+public class SortReportDecorator extends AbstractReportDecorator {
     public SortReportDecorator(ISchoolReport sr) {
         super(sr);
     }
