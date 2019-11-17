@@ -21,6 +21,10 @@ public class GamePlayerProxy implements InvocationHandler {
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         beforeGame();
         Object object = method.invoke(gamePlayer, args);
+        afterGame();
         return object;
+    }
+    private void afterGame(){
+        System.out.println("洗咖啡杯子");
     }
 }

@@ -14,9 +14,14 @@ public class GamePlayerProxy implements IGamePlayer {
     public void playGame() {
         this.beforeGame();
         gamePlayer.playGame();
+        this.afterGame();
     }
 
     private void beforeGame() {
         System.out.println("喝个咖啡");
+    }
+
+    private void afterGame(){
+        System.out.println("洗咖啡杯子");
     }
 }

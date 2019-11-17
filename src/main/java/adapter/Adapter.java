@@ -6,6 +6,6 @@ package adapter;
 public class Adapter extends Adaptee implements ITarget {
     @Override
     public void targetMethod() {
-        super.targetMethod();
+        super.originalMethod();
     }
 }

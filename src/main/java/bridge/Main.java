@@ -1,17 +1,21 @@
 package bridge;
 
+/**
+ * Main
+ *
+ * @author: xMustang
+ * @since: 1.0
+ */
 public class Main {
     public static void main(String[] args) {
-        BrandBridge midea = new Midea(new Aircondition());
-        System.out.println(midea.description());
+        White white = new White();
 
-        BrandBridge midea1 = new Midea(new Washingmechine());
-        System.out.println(midea1.description());
+        Square square = new Square();
+        square.setColor(white);
+        square.draw();
 
-        BrandBridge haier = new Haier(new Aircondition());
-        System.out.println(haier.description());
-
-        BrandBridge gree = new Gree(new Aircondition());
-        System.out.println(gree.description());
+        Rectangle rectangle = new Rectangle();
+        rectangle.setColor(white);
+        rectangle.draw();
     }
 }
