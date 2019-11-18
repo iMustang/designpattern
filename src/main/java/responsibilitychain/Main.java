@@ -1,14 +1,19 @@
 package responsibilitychain;
 
+/**
+ * Main
+ * Client：客户类角色：创建处理链，并向链头的具体处理者对象提交请求，它不关心处理细节和请求的传递过程。
+ */
 public class Main {
-    public static void main(String[] args) {
-        Tester tester = new Tester();
-        CTO cto = new CTO();
-        Boss boss = new Boss();
+	public static void main(String[] args) {
+		ClassAdviser classAdviser = new ClassAdviser();
+		DepartmentHead departmentHead = new DepartmentHead();
+		Dean dean = new Dean();
 
-        tester.setReviewPerson(cto);
-        cto.setReviewPerson(boss);
+		classAdviser.setNext(departmentHead);
+		departmentHead.setNext(dean);
 
-        tester.handle("no bugs");
-    }
+		int leaveDays = 8;
+		classAdviser.handleRequest(leaveDays);
+	}
 }

@@ -1,17 +1,17 @@
 package command;
 
 /**
- * @Title: ConcreteCommandB
+ * ConcreteCommandB
  */
 public class ConcreteCommandB implements ICommand {
-    private Receiver receiver;
+	private Receiver receiver;
 
-    public ConcreteCommandB(Receiver receiver) {
-        this.receiver = receiver;
-    }
+	public ConcreteCommandB(Receiver receiver) {
+		this.receiver = receiver;
+	}
 
-    @Override
-    public void excute() {
-        this.receiver.doSomethingB();
-    }
+	@Override
+	public void excute() {
+		this.receiver.doSomethingB();
+	}
 }
