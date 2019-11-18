@@ -2,6 +2,7 @@ package state;
 
 /**
  * HighState
+ * ConcreteState：具体状态角色，实现抽象状态所对应的行为。
  *
  * @author: xMustang
  * @since: 1.0
