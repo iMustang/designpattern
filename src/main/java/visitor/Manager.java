@@ -1,30 +1,21 @@
 package visitor;
 
+import lombok.Data;
+
+/**
+ * ConcreteElement：具体元素
+ */
+@Data
 public class Manager implements IStaff {
-    private String staffName;
-    private double workTime;
-    public Manager(String staffName) {
-        this.staffName = staffName;
-    }
+	private String staffName;
+	private double workTime;
 
-    @Override
-    public void accept(IDepartment department) {
-        department.visit(this);
-    }
+	public Manager(String staffName) {
+		this.staffName = staffName;
+	}
 
-    public String getStaffName() {
-        return staffName;
-    }
-
-    public void setStaffName(String staffName) {
-        this.staffName = staffName;
-    }
-
-    public double getWorkTime() {
-        return workTime;
-    }
-
-    public void setWorkTime(double workTime) {
-        this.workTime = workTime;
-    }
+	@Override
+	public void accept(IDepartment department) {
+		department.visit(this);
+	}
 }
