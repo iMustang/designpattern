@@ -2,7 +2,10 @@ package iterator;
 
 import java.util.List;
 
-public class ListIterator implements IIterator {
+/**
+ * 具体迭代器
+ */
+public class ListIterator implements Iterator {
     private List<Object> list;
     private Integer index = -1;
 

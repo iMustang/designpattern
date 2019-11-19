@@ -1,6 +1,9 @@
 package iterator;
 
-public class Management implements IOperation {
+/**
+ * 具体聚合
+ */
+public class Management implements IAggregate {
     private static final Integer MAX_LENGTH = 100;
     private Object[] array = new Object[MAX_LENGTH];
     private Integer index = -1;
@@ -16,7 +19,7 @@ public class Management implements IOperation {
     }
 
     @Override
-    public IIterator createIterator() {
+    public Iterator createIterator() {
         return new ArrayIterator(this.array);
     }
 }
