@@ -18,13 +18,15 @@ public class GamePlayerProxy implements InvocationHandler {
     }
 
     @Override
+    // 其中proxy在动态代理生成的代理类字节码中看到是this，也即是代理对象的实例
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         beforeGame();
         Object object = method.invoke(gamePlayer, args);
         afterGame();
         return object;
     }
-    private void afterGame(){
+
+    private void afterGame() {
         System.out.println("洗咖啡杯子");
     }
 }
