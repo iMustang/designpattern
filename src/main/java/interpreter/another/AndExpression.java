@@ -1,6 +1,5 @@
 package interpreter.another;
 
-import com.sun.tools.corba.se.idl.constExpr.And;
 import lombok.AllArgsConstructor;
 
 /**
