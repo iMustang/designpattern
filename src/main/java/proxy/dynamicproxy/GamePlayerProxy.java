@@ -21,6 +21,7 @@ public class GamePlayerProxy implements InvocationHandler {
     // 其中proxy在动态代理生成的代理类字节码中看到是this，也即是代理对象的实例
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         beforeGame();
+        System.out.println("此处的方法参数proxy为：" + proxy.getClass().getName());
         Object object = method.invoke(gamePlayer, args);
         afterGame();
         return object;
