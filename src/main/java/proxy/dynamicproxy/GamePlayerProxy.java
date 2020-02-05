@@ -13,10 +13,6 @@ public class GamePlayerProxy implements InvocationHandler {
         this.gamePlayer = gamePlayer;
     }
 
-    private void beforeGame() {
-        System.out.println("喝个咖啡");
-    }
-
     @Override
     // 其中proxy在动态代理生成的代理类字节码中看到是this，也即是代理对象的实例
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
@@ -25,6 +21,10 @@ public class GamePlayerProxy implements InvocationHandler {
         Object object = method.invoke(gamePlayer, args);
         afterGame();
         return object;
+    }
+
+    private void beforeGame() {
+        System.out.println("喝个咖啡");
     }
 
     private void afterGame() {
