@@ -4,7 +4,7 @@ import lombok.ToString;
 
 /**
  * Person
- * 静态内部类实现构建者模式
+ * 静态内部类实现建造者模式
  *
  * @author xMustang
  * @version 1.0

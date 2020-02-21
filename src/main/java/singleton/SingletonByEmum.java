@@ -12,5 +12,4 @@ package singleton;
  */
 public enum SingletonByEmum {
 	INSTANCE;
-
 }
