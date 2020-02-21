@@ -2,7 +2,7 @@ package adapter.twoway;
 
 /**
  * title: TargetRealize
- * description:
+ *
  */
 public class TargetRealize implements TwoWayTarget {
     @Override

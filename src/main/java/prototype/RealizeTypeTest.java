@@ -2,7 +2,7 @@ package prototype;
 
 /**
  * title: RealizeTypeTest
- * description:
+ *
  */
 public class RealizeTypeTest {
     public static void main(String[] args) throws CloneNotSupportedException {

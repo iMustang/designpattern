@@ -2,7 +2,7 @@ package adapter.twoway;
 
 /**
  * title: TwoWayAdapter
- * description:
+ *
  */
 public class TwoWayAdapter implements TwoWayAdaptee, TwoWayTarget {
     private TwoWayTarget target;

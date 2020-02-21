@@ -2,7 +2,7 @@ package prototype.manager;
 
 /**
  * title: PrototypeTest
- * description:
+ *
  */
 public class PrototypeTest {
     public static void main(String[] args) throws CloneNotSupportedException {

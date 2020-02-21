@@ -4,7 +4,7 @@ import lombok.Data;
 
 /**
  * title: Circle
- * description:
+ *
  */
 @Data
 public class Circle implements Shape {

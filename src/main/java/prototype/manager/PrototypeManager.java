@@ -5,7 +5,7 @@ import java.util.Map;
 
 /**
  * title: PrototypeManager
- * description:
+ *
  */
 public class PrototypeManager {
     private Map<String, Shape> map = new HashMap<>();

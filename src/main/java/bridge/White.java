@@ -2,7 +2,7 @@ package bridge;
 
 /**
  * title: White
- * description:
+ *
  */
 public class White implements Color {
     @Override

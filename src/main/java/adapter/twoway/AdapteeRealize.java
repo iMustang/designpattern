@@ -2,7 +2,7 @@ package adapter.twoway;
 
 /**
  * title: AdapteeRealize
- * description:
+ *
  */
 public class AdapteeRealize implements TwoWayAdaptee {
     @Override
